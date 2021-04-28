@@ -32,5 +32,5 @@ sortedDic= dict(sorted(bigramDic.items(), key=lambda kv:kv[1], reverse=True))
 with open ("bigrams.txt", "w") as outf:
     for key, value in list(sortedDic.items()):
         (a,b) = key
-        outf.write(a + " " + b + "\t" + value + "\n")
+        outf.write(a + " " + b + "\t" + str(value) + "\n")
     
